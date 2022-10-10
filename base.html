@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- 파비콘 넣을 부분 -->
+  <link rel="favicon" href="">
   <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <title>베이스입니다.</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>페니펜스 PENNYPENCE</title>
 </head>
 <body>
   <!-- 네비바 로그인전-->
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid mx-2">
-      <a class="navbar-brand" href="#">PENNYPENCE</a>
+      <a class="navbar-brand" href="#"><img src="./LOGO.png" alt="LOGO" style="width: 45px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -46,13 +49,14 @@
         <ul class=" me-auto mb-2 mx-lg-0 mx-2">
           <!-- 여기 프로필 이미지를 어떻게 줘야할지.. -->
           <a class="nav-link active" href="#">로그인</a>
+          
         </ul>
       </div>
     </div>
   </nav>
   <!-- 섹션 -->
-  <section class="container-fluid p-3 d-flex ">
-    <div class=" bg-secondary p-2 d-flex row-2">
+  <section class="container-fluid p-3 d-flex justify-content-between">
+    <div class=" bg-secondary p-2 col-4 w-50">
         <div class="card-body">
           <h5 class="card-title">소개페이지</h5>
           <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -61,8 +65,8 @@
           <a href="#" class="card-link">Another link</a>
         </div>
       </div>
-      <div class="d-flex ">
-        <div class="row-cols-4 bg-warning py-3">
+      <div class="px-3 col-12">
+        <div class="col-6 bg-warning p-3 mb-3">
           <div class="card-body">
             <h5 class="card-title">은행탭</h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -71,7 +75,7 @@
             <a href="#" class="card-link">Another link</a>
           </div>
         </div>  
-          <div class="row-cols-4 bg-danger py-3">
+          <div class="col-6 bg-danger p-3 mt-3">
             <div class="card-body">
               <h5 class="card-title">주식탭</h5>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -80,15 +84,15 @@
               <a href="#" class="card-link">Another link</a>
             </div>
           </div>
-      </div>
+        </div>    
     </div>
   </section>
   <!-- 푸터 -->
   <footer class="footer text-center bg-light position-fix bottom-0" style="width: 100%">
     
-      <div class="footer-address">
-        <a class="footer-address-logo" href="/">
-        <img src="#" alt="페니펜스">
+      <div class="footer-address p-2">
+        <a class="footer-address-logo" href="#">
+        <img src="./LOGO.png"  style="width: 130px;" alt="페니펜스">
         </a>
       </div>
       <nav class="footer-sitemap"><div class="footer-sitemap-item">
