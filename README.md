@@ -1,3 +1,36 @@
+# 개발 시작 전 설정 사항들
+0. pull 당겨오기
+
+1. 브랜치 바꿔주기
+```bash
+$ git checkout -b 브랜치 이름
+```
+
+# 개발 후 주의사항들
+1. commit 메세지 
+```bash
+개발을 다한 후 commit을 해주실 때 메세지에는 자신이 개발한 기능 혹은 추가한 주요 파일 이름을 적어주세요.
+
+ex) $ git commit -m 'Add Login function' / 'Add Login' / 'Add account.html' 
+```
+
+
+# Branch 설정
+```bash
+$ git branch 브랜치이름
+```
+브랜치 이름은 파일 이름으로 설정해주세요.
+ex) 'bank/accounts', 'stock/articles'
+
+이제 모든 작업은 브랜치에서 이루어집니다.
+즉, master에서 작업하지 않습니다!
+
+```bash
+$ git branch -d 브랜치 이름
+```
+혹시 모를 브랜치 삭제 시 사용해주세요.
+
+
 # 환경설정
 ```bash
 $ pip install -r requirements.txt
