@@ -1,7 +1,7 @@
 {% extends 'base1.html' %}
 
 {% block content %}
-  <h1>소개페이지</h1>
+  <h1>홈페이지</h1>
 <!-- 섹션 -->
 
 <section class="container-fluid p-3 d-flex justify-content-between">
@@ -10,7 +10,7 @@
         <h5 class="card-title">소개페이지</h5>
         <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Click Me!</a>
         <a href="#" class="card-link">Another link</a>
       </div>
     </div>
@@ -21,17 +21,17 @@
           <h5 class="card-title">은행탭</h5>
           <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
+          <a href="{% url 'bank:index' %}" class="card-link">Click Me!</a>
           <a href="#" class="card-link">Another link</a>
         </div>
       </div>  
         
         <div class="col-6 bg-danger p-3 mt-3">
           <div class="card-body">
-            <h5 class="card-title">주식탭</h5>
+            <h5 class="card-title">주식탭탭탭</h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
+            <a href="{% url 'stock:index' %}" class="card-link">Click Me!</a>
             <a href="#" class="card-link">Another link</a>
           </div>
         </div>
