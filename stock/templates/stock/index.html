@@ -1,38 +1,32 @@
 {% extends 'base3.html' %}
 
 {% block content %}
-  <h1>주식</h1>
-<!-- 섹션 -->
 
+<!-- 섹션 -->
 <section class="container-fluid p-3 d-flex justify-content-between">
-  <div class=" bg-secondary p-2 col-4 w-50">
+  <div class="card bg-secondary p-2 col-4 w-50 ">
       <div class="card-body">
-        <h5 class="card-title">모의투자</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Card link</a>
+        <h1 class="card-title fw-bold m-3">모의투자</h5>
+        <p class="card-text">실제 주식 투자 화면으로 투자를 시작해볼까요?</p>
+        <a href="#" class="card-link">투자 시작하기</a>
         <a href="#" class="card-link">Another link</a>
       </div>
     </div>
   
     <div class="px-3 col-12">
-      <div class="col-6 bg-warning p-3 mb-3">
+      <div class="card col-6 bg-warning p-3 mb-3">
         <div class="card-body">
-          <h5 class="card-title">주식 용어</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <h3 class="card-title fw-bold m-3">주식 용어</h3>
+          <p class="card-text">복잡한 주식용어 한방에 정리하기!</p>
+          <a href="{% url 'stock:search' %}" class="card-link">주식용어 보러가기</a>
         </div>
       </div>  
         
-        <div class="col-6 bg-danger p-3 mt-3">
+        <div class="card col-6 bg-danger p-3 mt-3">
           <div class="card-body">
-            <h5 class="card-title">주식 및 경제 뉴스</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+            <h3 class="card-title fw-bold m-3">주식 및 경제 뉴스</h3>
+            <p class="card-text">주식 및 경제 뉴스 쉽게 이해하기!</p>
+            <a href="{% url 'stock:news' %}" class="card-link">뉴스 보러가기</a>
           </div>
         </div>
     </div>

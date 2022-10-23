@@ -5,4 +5,7 @@ app_name = "stock"
 
 urlpatterns = [
     path("", views.index, name="index"),
+    path("search/", views.search, name="search"),
+    path("news/", views.news, name='news'),
+    path("word/", views.word, name="word"),
 ]

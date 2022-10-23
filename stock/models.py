@@ -5,7 +5,7 @@ from imagekit.processors import ResizeToFill, Thumbnail
 
 # Create your models here.
 
-class Article(models.Model):
+class Stock(models.Model):
     title = models.CharField(max_length=20)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
