@@ -1,5 +1,6 @@
 <!-- home -->
 {% load django_bootstrap5 %}
+{% load static %} 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,9 +20,9 @@
 
   <body>
     <!-- 네비바 로그인전-->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg " style="background:#F9F5EB;">
       <div class="container-fluid mx-2">
-        <a class="navbar-brand" href="{% url 'home:index' %}"><img src="./pennypence.assets/LOGO.png" alt="LOGO" style="width: 45px"></a>
+        <a class="navbar-brand" href="{% url 'home:index' %}"><img src=" {% static 'static/LOGO.png' %}" alt="LOGO" style="width: 45px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,21 +41,22 @@
             <button class="btn btn-outline-dark" type="submit">Search</button>
           </form>
           <!-- <ul class=" me-auto mb-2 mx-lg-0 mx-1"> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 로그인 </a> <ul class="dropdown-menu"> <li><a class="dropdown-item" href="#"></a></li> <li><a class="dropdown-item" href="#">Another action</a></li> <li><hr class="dropdown-divider"></li> <li><a class="dropdown-item" href="#">Something else here</a></li> </ul> </li> </ul> -->
-          <ul class=" me-auto mb-2 mx-lg-0 mx-2">
+          <ul class=" me-auto mb-2 mx-lg-0 mx-2 d-flex justify-content-around">
             <!-- 여기 프로필 이미지를 어떻게 줘야할지.. -->
-            <a class="nav-link active" href="#">로그인</a>
-
+            <a class="nav-link active m-2" href="{% url 'accounts:signup' %}">회원가입</a>
+          
+            <a class="nav-link active m-2" href="{% url 'accounts:login' %}">로그인</a>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- 푸터 -->
-    <footer class="footer text-center bg-light position-fixed bottom-0" style="width: 100%">
+    <footer class="footer text-center  position-fixed bottom-0" style="width: 100%; background:#F9F5EB;">
 
       <div class="footer-address p-2">
         <a class="footer-address-logo" href="#">
-          <img src="./LOGO.png" style="width: 130px;" alt="페니펜스">
+          <img src=" {% static 'images/LOGO.png' %}" style="width: 130px;" alt="페니펜스">
         </a>
       </div>
       <nav class="footer-sitemap">
