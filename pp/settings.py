@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     "home",
     "bank",
     "stock",
+    "accounts",
     "imagekit",
     "django_bootstrap5",
     "django.contrib.admin",
@@ -126,8 +127,8 @@ STATIC_URL = "/static/"
 
 # Media files (user uploaded filed)
 
-MEDIA_ROOT = BASE_DIR / 'images'
-MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / "images"
+MEDIA_URL = "/media/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
