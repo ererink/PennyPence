@@ -7,3 +7,6 @@ def index(request):
 
 def wearepp(request):
     return render(request, 'home/wearepp.html')
+
+def profil(request):
+    return render(request, "home/profil.html")
