@@ -1,12 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BANK</title>
-</head>
-<body>
-  
-</body>
-</html>
+{% extends 'base2.html' %}
+{% block content %}
+  <!-- 섹션 -->
+
+  <section class="container-fluid p-3 d-flex justify-content-between">
+    <div class="card bg-warning bg-opacity-25 p-2 col-4 w-50">
+      <div class="card-body">
+        <h5 class="card-title m-3 text-orange">인기 키워드 순위</h5>
+        <div class="list-group">
+          <button type="button" class="list-group-item list-group-item-action" aria-current="true">
+            1. The current button
+          </button>
+          <button type="button" class="list-group-item list-group-item-action">2. A second button item</button>
+          <button type="button" class="list-group-item list-group-item-action">3. A third button item</button>
+          <button type="button" class="list-group-item list-group-item-action">4. A fourth button item</button>
+          <button type="button" class="list-group-item list-group-item-action">5. A disabled button item</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-3 col-12">
+      <div class="card col-6 bg-white border border-warning p-3 mb-3">
+        <div class="card-body">
+          <h5 class="card-title">은행 용어</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+      <div class="card col-6 bg-white border border-warning p-3 mt-3">
+        <div class="card-body">
+          <h5 class="card-title">은행 관련 뉴스</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+{% endblock %}
