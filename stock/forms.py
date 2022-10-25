@@ -1,8 +1,8 @@
 from django import forms
-from .models import Stock
+from .models import Article
 
 class ArticleForm(forms.ModelForm):
 
     class Meta:
-        model = Stock
+        model = Article
         fields = ['title', 'content', 'image', 'thumbnail']
