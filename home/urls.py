@@ -6,4 +6,5 @@ app_name='home'
 urlpatterns = [
     path('',views.index,name='home'),
     path('wearepp/',views.wearepp,name='wearepp'),
+    path("profil/", views.profil, name="profil"),
 ]
