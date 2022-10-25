@@ -1,3 +1,4 @@
+
 from django.conf import settings
 from django.db import models
 from imagekit.models import ProcessedImageField
@@ -5,7 +6,7 @@ from imagekit.processors import ResizeToFill, Thumbnail
 
 # Create your models here.
 
-class Stock(models.Model):
+class Article(models.Model):
     title = models.CharField(max_length=20)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
